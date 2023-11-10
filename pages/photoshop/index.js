@@ -90,7 +90,7 @@ export default function Photoshop() {
       backgroundColor: "transparent",
     });
     // canvas.filter = `blur(${blurAmount + 5}px) ${sepia}(10)`;
-    console.log(blurAmount, clickedFilter);
+    // console.log(blurAmount, clickedFilter);
     // const imageUrl = "/ic_profile-48px.png"; // Update with your image URL
 
     fabric.Image.fromURL(
@@ -107,8 +107,8 @@ export default function Photoshop() {
         }
         // Apply rotation
         image.rotate(rotate);
-        console.log(image, rotate);
-        console.log(filters, blurplus);
+        // console.log(image, rotate);
+        // console.log(filters, blurplus);
         if (isCrop) {
           // Make the imgRef invisible
           // imgRef.current.style.display = "none";
@@ -123,7 +123,7 @@ export default function Photoshop() {
         drawnPaths.forEach((path) => {
           canvas.add(path);
         });
-        console.log(canvas);
+        // console.log(canvas);
 
         //Add draw
         if (draw) {
@@ -134,7 +134,7 @@ export default function Photoshop() {
           canvas.on("path:created", function (e) {
             const path = e.path;
             setDrawnPaths((prevPaths) => [...prevPaths, path]);
-            console.log(canvas);
+            // console.log(canvas);
           });
         }
 
@@ -144,11 +144,11 @@ export default function Photoshop() {
 
         // Render canvas
         if (!canvas || !fabric) {
-          console.log("canvas render failxxx");
+          // console.log("canvas render failxxx");
           return;
         } else {
           canvas.renderAll();
-          console.log("canvas render well!");
+          // console.log("canvas render well!");
         }
 
         image.getElement();
@@ -163,7 +163,7 @@ export default function Photoshop() {
       if (window.innerWidth < 1024) {
         alert("Please run the website in a desktop view");
       }
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
       canvas.setWidth(newWidth);
       canvas.setHeight(newHeight);
       canvas.renderAll();
@@ -201,7 +201,7 @@ export default function Photoshop() {
 
   // ///////////////crop
   useEffect(() => {
-    console.log(clickedFilter);
+    // console.log(clickedFilter);
     if (clickedFilter === "grayscale") {
       filters.push(new fabric.Image.filters.Grayscale());
     } else if (clickedFilter === "contrast") {
@@ -280,7 +280,7 @@ export default function Photoshop() {
       );
       reader.readAsDataURL(e.target.files[0]);
     }
-    console.log(e.target.files[0]);
+    // console.log(e.target.files[0]);
   }
 
   const onClickRotate = (e) => {
@@ -341,7 +341,7 @@ export default function Photoshop() {
     setDrawDone(false);
     setIsReset(false);
     tabMenu(e);
-    console.log(draw, drawDone, openMenu);
+    // console.log(draw, drawDone, openMenu);
   };
   const onClickRemoveDraw = () => {
     setDraw(false);
@@ -380,7 +380,7 @@ export default function Photoshop() {
     setTextDone(false);
     tabMenu(e);
     setIsReset(false);
-    console.log(isClicked, text, textDone);
+    // console.log(isClicked, text, textDone);
   };
   const onClickRemoveText = () => {
     setText(false);
@@ -398,7 +398,7 @@ export default function Photoshop() {
 
     // canvas.add(iText);
     setTextPaths((prevTexts) => [...prevTexts, iText]);
-    console.log(isClicked, iText?.text, textPaths[0]?.text, textPaths);
+    // console.log(isClicked, iText?.text, textPaths[0]?.text, textPaths);
   };
   const onClickSticker = (e) => {
     if (drawDone === false || textDone === false) {
@@ -413,7 +413,7 @@ export default function Photoshop() {
     tabMenu(e);
     setStickerClicked(true);
     setIsReset(false);
-    console.log(textDone, drawDone);
+    // console.log(textDone, drawDone);
   };
   const onClickReset = () => {
     setIsClicked(""),
@@ -426,7 +426,7 @@ export default function Photoshop() {
     setIsReset(true);
     setDraw(false);
     setDrawDone(true);
-    console.log(openMenu);
+    // console.log(openMenu);
     const copy = [...drawnPaths];
     copy.splice(0, drawnPaths.length);
     setDrawnPaths(copy);

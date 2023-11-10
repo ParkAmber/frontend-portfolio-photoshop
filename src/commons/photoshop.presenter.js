@@ -84,7 +84,7 @@ export default function PhotoshopUI(props) {
         />
         <meta
           property='og:image'
-          content='https://storage.googleapis.com/webportfolio-backend-storage/magazine.living.png'
+          content='https://storage.googleapis.com/webportfolio-backend-storage/photoshop-preview.png'
         />
         <link rel='icon' href='/logo2.png' />
       </Head>
