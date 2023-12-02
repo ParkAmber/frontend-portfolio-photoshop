@@ -39,4 +39,10 @@ Understanding of relevant libraries and Canvas to build powerful and interactive
 -------
 
 ### **Advanced Feature:** 
-+ Login Functionality : Implementing the process of obtaining tokens using cookies, enhancing the security and efficiency of user authentication during login.
++ Draw Tool
+
+![draw](https://github.com/ParkAmber/frontend-portfolio-photoshop/blob/main/draw.png)
+
++ Sticker Tool
+
+  ![sticker](https://github.com/ParkAmber/frontend-portfolio-photoshop/blob/main/sticker.png)
