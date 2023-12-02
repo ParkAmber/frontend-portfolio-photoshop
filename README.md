@@ -1,7 +1,21 @@
-Summary:
+# Photo Editing Website
++ Demo: https://portfolio-photoshop.amberpark.site/photoshop/
+
+  
+### **Summary:**
 This project is a Photoshop function tool where I implemented core functionalities such as "Rotate," "Filter," "Crop," "Draw," and "Sticker." To realize these features, I predominantly utilized React, Fabric.js, and the React-image-crop library.
 
-Challenges:
+### **Development Goals:** 
+Understanding of relevant libraries and Canvas to build powerful and interactive applications.
+
+### **Sills:** 
++ HTML
++ CSS
++ React.js
++ Styled Components
+  
+-------
++ **Challenges:**
 
 1. I encountered conflicts between the Fabric.js canvas and the crop canvas, making it challenging to create a unified environment for both.
 
@@ -11,7 +25,9 @@ Challenges:
 
 4. There were several issues related to canvas re-rendering, affecting the overall application performance.
 
-Solving:
+   
+
++ **Solutions:**
 
 1. I ensured uniformity in the application of effects, including blur intensity and rotation angles, for both the Fabric.js canvas and the crop tool canvas.
 
@@ -20,4 +36,7 @@ Solving:
 3. Employing setState, I efficiently managed the collection of drawn paths, effectively adding both previous and new paths to an array. Subsequently, each path was iteratively incorporated into the canvas using a for loop.
 
 4. To address and resolve conflicts between the prior canvas instance and the new canvas, I judiciously employed canvas.dispose() within the useEffect. This facilitated the clean unmounting of the component and a comprehensive cleanup of resources.
+-------
 
+### **Advanced Feature:** 
++ Login Functionality : Implementing the process of obtaining tokens using cookies, enhancing the security and efficiency of user authentication during login.
