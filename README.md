@@ -3,10 +3,10 @@
 
   
 ### **Summary:**
-This project is a Photoshop function tool where I implemented core functionalities such as "Rotate," "Filter," "Crop," "Draw," and "Sticker." To realize these features, I predominantly utilized React, Fabric.js, and the React-image-crop library.
+This project encompasses a Photoshop function tool featuring core functionalities like "Rotate," "Filter," "Crop," "Draw," and "Sticker." The implementation relied heavily on React, Fabric.js, and the React-image-crop library.
 
 ### **Project Objective:**
-In my role as a web designer, I delved into the proficient use of various photo editing tools. Observing the widespread adoption of photo editing among individuals, I was inspired to create a customized photo editing tool. The primary goal was to seamlessly integrate essential functionalities drawn from my experience with existing tools. This inspiration fueled the initiation of the development journey for a comprehensive photo editing application.
+In the capacity of a web designer, a deep dive into the proficient use of various photo editing tools sparked the inspiration to develop a customized photo editing tool. Motivated by the widespread adoption of photo editing, the primary objective was to seamlessly integrate essential functionalities gleaned from experience with existing tools. This inspiration ignited the development journey for a comprehensive photo editing application.
 
 ### **Development Goals:** 
 Understanding of relevant libraries and Canvas to build powerful and interactive applications.
