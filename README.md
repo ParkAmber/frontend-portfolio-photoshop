@@ -5,8 +5,8 @@
 ### **Summary:**
 This project is a Photoshop function tool where I implemented core functionalities such as "Rotate," "Filter," "Crop," "Draw," and "Sticker." To realize these features, I predominantly utilized React, Fabric.js, and the React-image-crop library.
 
-### **Project Planning Purpose:**
-During my time as a web designer, I extensively utilized various photo editing tools. In observing the widespread use of photo editing by individuals nowadays, I was inspired to create my own photo editing tool. The goal was to incorporate key functionalities that I found essential while using existing tools. This inspiration led to the initiation of the development process for a comprehensive photo editing application.
+### **Project Objective:**
+In my role as a web designer, I delved into the proficient use of various photo editing tools. Observing the widespread adoption of photo editing among individuals, I was inspired to create a customized photo editing tool. The primary goal was to seamlessly integrate essential functionalities drawn from my experience with existing tools. This inspiration fueled the initiation of the development journey for a comprehensive photo editing application.
 
 ### **Development Goals:** 
 Understanding of relevant libraries and Canvas to build powerful and interactive applications.
@@ -20,25 +20,26 @@ Understanding of relevant libraries and Canvas to build powerful and interactive
 -------
 + **Challenges:**
 
-1. I encountered conflicts between the Fabric.js canvas and the crop canvas, making it challenging to create a unified environment for both.
+1. Encountered conflicts between the Fabric.js canvas and the crop canvas, posing difficulties in establishing a unified environment for both.
 
-2. When attempting to use other functionalities like the "Blur" or "Rotate" tool after using the "Draw" or "Text" tool, I observed that the drawn paths or text were not being applied to the canvas.
+2. Noticed a challenge when using additional functionalities like the "Blur" or "Rotate" tool after employing the "Draw" or "Text" tool, where drawn paths or text were not effectively applied to the canvas.
 
-3. In the "Draw" tool, the drawn paths were reset when dragged.
+3. Faced an issue in the "Draw" tool where drawn paths were reset when dragged.
 
-4. There were several issues related to canvas re-rendering, affecting the overall application performance.
+4. Addressed various concerns related to canvas re-rendering, impacting the overall performance of the application.
 
    
 
 + **Solutions:**
 
-1. I ensured uniformity in the application of effects, including blur intensity and rotation angles, for both the Fabric.js canvas and the crop tool canvas.
+1. Ensured consistency in applying effects, such as blur intensity and rotation angles, across both the Fabric.js canvas and the crop tool canvas.
 
-2. Leveraging the power of useEffect with dependencies on the draw and text states, I orchestrated the re-rendering of the canvas to seamlessly update drawn paths and text elements as state changes occurred.
+2. Implemented the useEffect hook with dependencies on the draw and text states to meticulously orchestrate the re-rendering of the canvas. This strategic approach ensures a seamless update of drawn paths and text elements with each state change, contributing to a responsive and dynamic user interface.
 
-3. Employing setState, I efficiently managed the collection of drawn paths, effectively adding both previous and new paths to an array. Subsequently, each path was iteratively incorporated into the canvas using a for loop.
+3. Efficiently managed the collection of drawn paths by employing setState, adding both previous and new paths to an array. Subsequently, each path was iteratively incorporated into the canvas using a for loop.
 
-4. To address and resolve conflicts between the prior canvas instance and the new canvas, I judiciously employed canvas.dispose() within the useEffect. This facilitated the clean unmounting of the component and a comprehensive cleanup of resources.
+4. Resolved conflicts between the prior canvas instance and the new canvas by judiciously employing canvas.dispose() within the useEffect. This ensured the clean unmounting of the component and comprehensive cleanup of resources.
+
 -------
 
 ### **Advanced Feature:** 
